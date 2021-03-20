@@ -10,7 +10,7 @@ contract SimpleStorage {
   struct card {
       uint256 id;
       uint256 strength;
-      uint256 defence;
+      string defence;
   }
   mapping(uint256 => card) public cards;
   card[] cardsArray;
@@ -35,8 +35,7 @@ contract SimpleStorage {
   }
 
 
-  function createCard(uint256 id, uint256 strength, uint256 defence) public  returns (uint256) {
-    
+  function createCard(uint256 id, uint256 strength, string memory defence) public  returns (uint256) {
     card memory newCard = card(
         id,
         strength,
