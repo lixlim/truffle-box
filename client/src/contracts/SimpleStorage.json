@@ -1,0 +1,2658 @@
+{
+  "contractName": "SimpleStorage",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "cards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "strength",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "defence",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "x",
+          "type": "uint256"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "get",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "y",
+          "type": "uint256"
+        }
+      ],
+      "name": "setNewValue",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getNewValue",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getCards",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "strength",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "defence",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct SimpleStorage.card[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "strength",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "defence",
+          "type": "uint256"
+        }
+      ],
+      "name": "createCard",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"cards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"strength\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"defence\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"strength\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"defence\",\"type\":\"uint256\"}],\"name\":\"createCard\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getCards\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"strength\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"defence\",\"type\":\"uint256\"}],\"internalType\":\"struct SimpleStorage.card[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getNewValue\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"y\",\"type\":\"uint256\"}],\"name\":\"setNewValue\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/lixua/OneDrive/NUS/IS4302/truffle-box/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/lixua/OneDrive/NUS/IS4302/truffle-box/contracts/SimpleStorage.sol\":{\"keccak256\":\"0xba11d40c78ce11418152cd69259ab0de46e3617dd115777c75165c686c283146\",\"urls\":[\"bzz-raw://35dcfc47f0ddd0107802b7261cd0c9d4a3154205b8b99aa91d90c345f5e8dbef\",\"dweb:/ipfs/QmRcH9UkrsMY4NdxDsKUNrTz5nFwiB9P4j9ML5Qkp89qKS\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061058f806100206000396000f3fe608060405234801561001057600080fd5b506004361061007d5760003560e01c80638dc107681161005b5780638dc10768146100da578063951c40771461010c578063b0df9e5314610128578063dafc88df146101465761007d565b806354fee6441461008257806360fe47b1146100a05780636d4ce63c146100bc575b600080fd5b61008a610176565b60405161009791906104a0565b60405180910390f35b6100ba60048036036100b59190810190610330565b610180565b005b6100c461018a565b6040516100d191906104a0565b60405180910390f35b6100f460048036036100ef9190810190610330565b610193565b604051610103939291906104bb565b60405180910390f35b61012660048036036101219190810190610330565b6101bd565b005b6101306101c7565b60405161013d919061047e565b60405180910390f35b610160600480360361015b9190810190610359565b610244565b60405161016d91906104a0565b60405180910390f35b6000600154905090565b8060008190555050565b60008054905090565b60026020528060005260406000206000915090508060000154908060010154908060020154905083565b8060018190555050565b60606003805480602002602001604051908101604052809291908181526020016000905b8282101561023b57838290600052602060002090600302016040518060600160405290816000820154815260200160018201548152602001600282015481525050815260200190600101906101eb565b50505050905090565b600061024e6102fa565b6040518060600160405280868152602001858152602001848152509050806002600087815260200190815260200160002060008201518160000155602082015181600101556040820151816002015590505060038190806001815401808255809150509060018203906000526020600020906003020160009091929091909150600082015181600001556020820151816001015560408201518160020155505050849150509392505050565b60405180606001604052806000815260200160008152602001600081525090565b60008135905061032a81610535565b92915050565b60006020828403121561034257600080fd5b60006103508482850161031b565b91505092915050565b60008060006060848603121561036e57600080fd5b600061037c8682870161031b565b935050602061038d8682870161031b565b925050604061039e8682870161031b565b9150509250925092565b60006103b4838361041e565b60608301905092915050565b60006103cb82610502565b6103d5818561051a565b93506103e0836104f2565b8060005b838110156104115781516103f888826103a8565b97506104038361050d565b9250506001810190506103e4565b5085935050505092915050565b6060820160008201516104346000850182610460565b5060208201516104476020850182610460565b50604082015161045a6040850182610460565b50505050565b6104698161052b565b82525050565b6104788161052b565b82525050565b6000602082019050818103600083015261049881846103c0565b905092915050565b60006020820190506104b5600083018461046f565b92915050565b60006060820190506104d0600083018661046f565b6104dd602083018561046f565b6104ea604083018461046f565b949350505050565b6000819050602082019050919050565b600081519050919050565b6000602082019050919050565b600082825260208201905092915050565b6000819050919050565b61053e8161052b565b811461054957600080fd5b5056fea365627a7a72315820b6672b009adfc4bc2da0ba717286e7289400d83ece9f76a4fc62bea027a07c916c6578706572696d656e74616cf564736f6c63430005100040",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061007d5760003560e01c80638dc107681161005b5780638dc10768146100da578063951c40771461010c578063b0df9e5314610128578063dafc88df146101465761007d565b806354fee6441461008257806360fe47b1146100a05780636d4ce63c146100bc575b600080fd5b61008a610176565b60405161009791906104a0565b60405180910390f35b6100ba60048036036100b59190810190610330565b610180565b005b6100c461018a565b6040516100d191906104a0565b60405180910390f35b6100f460048036036100ef9190810190610330565b610193565b604051610103939291906104bb565b60405180910390f35b61012660048036036101219190810190610330565b6101bd565b005b6101306101c7565b60405161013d919061047e565b60405180910390f35b610160600480360361015b9190810190610359565b610244565b60405161016d91906104a0565b60405180910390f35b6000600154905090565b8060008190555050565b60008054905090565b60026020528060005260406000206000915090508060000154908060010154908060020154905083565b8060018190555050565b60606003805480602002602001604051908101604052809291908181526020016000905b8282101561023b57838290600052602060002090600302016040518060600160405290816000820154815260200160018201548152602001600282015481525050815260200190600101906101eb565b50505050905090565b600061024e6102fa565b6040518060600160405280868152602001858152602001848152509050806002600087815260200190815260200160002060008201518160000155602082015181600101556040820151816002015590505060038190806001815401808255809150509060018203906000526020600020906003020160009091929091909150600082015181600001556020820151816001015560408201518160020155505050849150509392505050565b60405180606001604052806000815260200160008152602001600081525090565b60008135905061032a81610535565b92915050565b60006020828403121561034257600080fd5b60006103508482850161031b565b91505092915050565b60008060006060848603121561036e57600080fd5b600061037c8682870161031b565b935050602061038d8682870161031b565b925050604061039e8682870161031b565b9150509250925092565b60006103b4838361041e565b60608301905092915050565b60006103cb82610502565b6103d5818561051a565b93506103e0836104f2565b8060005b838110156104115781516103f888826103a8565b97506104038361050d565b9250506001810190506103e4565b5085935050505092915050565b6060820160008201516104346000850182610460565b5060208201516104476020850182610460565b50604082015161045a6040850182610460565b50505050565b6104698161052b565b82525050565b6104788161052b565b82525050565b6000602082019050818103600083015261049881846103c0565b905092915050565b60006020820190506104b5600083018461046f565b92915050565b60006060820190506104d0600083018661046f565b6104dd602083018561046f565b6104ea604083018461046f565b949350505050565b6000819050602082019050919050565b600081519050919050565b6000602082019050919050565b600082825260208201905092915050565b6000819050919050565b61053e8161052b565b811461054957600080fd5b5056fea365627a7a72315820b6672b009adfc4bc2da0ba717286e7289400d83ece9f76a4fc62bea027a07c916c6578706572696d656e74616cf564736f6c63430005100040",
+  "sourceMap": "91:841:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;91:841:0;;;;;;;",
+  "deployedSourceMap": "91:841:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;91:841:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;499:76;;;:::i;:::-;;;;;;;;;;;;;;;;305:53;;;;;;;;;;;;;;;;:::i;:::-;;362:70;;;:::i;:::-;;;;;;;;;;;;;;;;243:37;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;436:59;;;;;;;;;;;;;;;;:::i;:::-;;579:85;;;:::i;:::-;;;;;;;;;;;;;;;;669:261;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;499:76;543:4;562:8;;555:15;;499:76;:::o;305:53::-;352:1;339:10;:14;;;;305:53;:::o;362:70::-;398:4;417:10;;410:17;;362:70;:::o;243:37::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;436:59::-;489:1;478:8;:12;;;;436:59;:::o;579:85::-;621:13;649:10;642:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;579:85;:::o;669:261::-;753:7;773:19;;:::i;:::-;795:57;;;;;;;;809:2;795:57;;;;821:8;795:57;;;;839:7;795:57;;;773:79;;873:7;861:5;:9;867:2;861:9;;;;;;;;;;;:19;;;;;;;;;;;;;;;;;;;;;;;;;;;886:10;902:7;886:24;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;886:24:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;923:2;916:9;;;669:261;;;;;:::o;91:841::-;;;;;;;;;;;;;;;;;;;;;;;;:::o;5:130:-1:-;;85:6;72:20;63:29;;97:33;124:5;97:33;;;57:78;;;;;142:241;;246:2;234:9;225:7;221:23;217:32;214:2;;;262:1;259;252:12;214:2;297:1;314:53;359:7;350:6;339:9;335:22;314:53;;;304:63;;276:97;208:175;;;;;390:491;;;;528:2;516:9;507:7;503:23;499:32;496:2;;;544:1;541;534:12;496:2;579:1;596:53;641:7;632:6;621:9;617:22;596:53;;;586:63;;558:97;686:2;704:53;749:7;740:6;729:9;725:22;704:53;;;694:63;;665:98;794:2;812:53;857:7;848:6;837:9;833:22;812:53;;;802:63;;773:98;490:391;;;;;;889:241;;1008:82;1086:3;1078:6;1008:82;;;1119:4;1114:3;1110:14;1096:28;;1001:129;;;;;1205:818;;1382:70;1446:5;1382:70;;;1465:102;1560:6;1555:3;1465:102;;;1458:109;;1588:72;1654:5;1588:72;;;1680:7;1708:1;1693:308;1718:6;1715:1;1712:13;1693:308;;;1785:6;1779:13;1806:95;1897:3;1882:13;1806:95;;;1799:102;;1918:76;1987:6;1918:76;;;1908:86;;1750:251;1740:1;1737;1733:9;1728:14;;1693:308;;;1697:14;2014:3;2007:10;;1361:662;;;;;;;;2092:611;2211:4;2206:3;2202:14;2292:4;2285:5;2281:16;2275:23;2304:63;2361:4;2356:3;2352:14;2338:12;2304:63;;;2231:142;2450:4;2443:5;2439:16;2433:23;2462:63;2519:4;2514:3;2510:14;2496:12;2462:63;;;2383:148;2607:4;2600:5;2596:16;2590:23;2619:63;2676:4;2671:3;2667:14;2653:12;2619:63;;;2541:147;2184:519;;;;2710:103;2783:24;2801:5;2783:24;;;2778:3;2771:37;2765:48;;;2820:113;2903:24;2921:5;2903:24;;;2898:3;2891:37;2885:48;;;2940:425;;3140:2;3129:9;3125:18;3117:26;;3190:9;3184:4;3180:20;3176:1;3165:9;3161:17;3154:47;3215:140;3350:4;3341:6;3215:140;;;3207:148;;3111:254;;;;;3372:213;;3490:2;3479:9;3475:18;3467:26;;3504:71;3572:1;3561:9;3557:17;3548:6;3504:71;;;3461:124;;;;;3592:435;;3766:2;3755:9;3751:18;3743:26;;3780:71;3848:1;3837:9;3833:17;3824:6;3780:71;;;3862:72;3930:2;3919:9;3915:18;3906:6;3862:72;;;3945;4013:2;4002:9;3998:18;3989:6;3945:72;;;3737:290;;;;;;;4034:167;;4136:3;4128:11;;4174:4;4169:3;4165:14;4157:22;;4122:79;;;;4208:153;;4333:5;4327:12;4317:22;;4298:63;;;;4368:124;;4482:4;4477:3;4473:14;4465:22;;4459:33;;;;4500:194;;4646:6;4641:3;4634:19;4683:4;4678:3;4674:14;4659:29;;4627:67;;;;;4702:72;;4764:5;4753:16;;4747:27;;;;4781:117;4850:24;4868:5;4850:24;;;4843:5;4840:35;4830:2;;4889:1;4886;4879:12;4830:2;4824:74;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.5.0;\npragma experimental ABIEncoderV2;\n\ncontract SimpleStorage {\n  uint storedData;\n  uint newValue;\n\n  \n  struct card {\n      uint256 id;\n      uint256 strength;\n      uint256 defence;\n  }\n  mapping(uint256 => card) public cards;\n  card[] cardsArray;\n  function set(uint x) public {\n    storedData = x;\n  }\n\n  function get() public view returns (uint) {\n    return storedData;\n  }\n\n  function setNewValue(uint y) public {\n    newValue = y;\n  }\n\n  function getNewValue() public view returns (uint) {\n    return newValue;\n  }\n\n  function getCards() external view returns(card[] memory) {\n    return cardsArray;\n  }\n\n\n  function createCard(uint256 id, uint256 strength, uint256 defence) public  returns (uint256) {\n    \n    card memory newCard = card(\n        id,\n        strength,\n        defence\n    );  \n\n    cards[id] = newCard;\n    cardsArray.push(newCard);\n    return id;\n  }\n}\n",
+  "sourcePath": "C:/Users/lixua/OneDrive/NUS/IS4302/truffle-box/contracts/SimpleStorage.sol",
+  "ast": {
+    "absolutePath": "/C/Users/lixua/OneDrive/NUS/IS4302/truffle-box/contracts/SimpleStorage.sol",
+    "exportedSymbols": {
+      "SimpleStorage": [
+        100
+      ]
+    },
+    "id": 101,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "id": 2,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "56:33:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 100,
+        "linearizedBaseContracts": [
+          100
+        ],
+        "name": "SimpleStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "storedData",
+            "nodeType": "VariableDeclaration",
+            "scope": 100,
+            "src": "118:15:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "118:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 6,
+            "name": "newValue",
+            "nodeType": "VariableDeclaration",
+            "scope": 100,
+            "src": "137:13:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "137:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "canonicalName": "SimpleStorage.card",
+            "id": 13,
+            "members": [
+              {
+                "constant": false,
+                "id": 8,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "178:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "178:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10,
+                "name": "strength",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "196:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 9,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "196:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 12,
+                "name": "defence",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "220:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 11,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "220:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "card",
+            "nodeType": "StructDefinition",
+            "scope": 100,
+            "src": "158:82:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 17,
+            "name": "cards",
+            "nodeType": "VariableDeclaration",
+            "scope": 100,
+            "src": "243:37:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_card_$13_storage_$",
+              "typeString": "mapping(uint256 => struct SimpleStorage.card)"
+            },
+            "typeName": {
+              "id": 16,
+              "keyType": {
+                "id": 14,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "251:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "243:24:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_card_$13_storage_$",
+                "typeString": "mapping(uint256 => struct SimpleStorage.card)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 15,
+                "name": "card",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 13,
+                "src": "262:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_card_$13_storage_ptr",
+                  "typeString": "struct SimpleStorage.card"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 20,
+            "name": "cardsArray",
+            "nodeType": "VariableDeclaration",
+            "scope": 100,
+            "src": "284:17:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_card_$13_storage_$dyn_storage",
+              "typeString": "struct SimpleStorage.card[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 18,
+                "name": "card",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 13,
+                "src": "284:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_card_$13_storage_ptr",
+                  "typeString": "struct SimpleStorage.card"
+                }
+              },
+              "id": 19,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "284:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_card_$13_storage_$dyn_storage_ptr",
+                "typeString": "struct SimpleStorage.card[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 29,
+              "nodeType": "Block",
+              "src": "333:25:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 27,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 25,
+                      "name": "storedData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "339:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 26,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 22,
+                      "src": "352:1:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "339:14:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 28,
+                  "nodeType": "ExpressionStatement",
+                  "src": "339:14:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 30,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "set",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 23,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 22,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30,
+                  "src": "318:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 21,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "318:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "317:8:0"
+            },
+            "returnParameters": {
+              "id": 24,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "333:0:0"
+            },
+            "scope": 100,
+            "src": "305:53:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 37,
+              "nodeType": "Block",
+              "src": "404:28:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 35,
+                    "name": "storedData",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4,
+                    "src": "417:10:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 34,
+                  "id": 36,
+                  "nodeType": "Return",
+                  "src": "410:17:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 38,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "get",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 31,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "374:2:0"
+            },
+            "returnParameters": {
+              "id": 34,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 38,
+                  "src": "398:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "398:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "397:6:0"
+            },
+            "scope": 100,
+            "src": "362:70:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 47,
+              "nodeType": "Block",
+              "src": "472:23:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 45,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 43,
+                      "name": "newValue",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "478:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 44,
+                      "name": "y",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 40,
+                      "src": "489:1:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "478:12:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 46,
+                  "nodeType": "ExpressionStatement",
+                  "src": "478:12:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 48,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setNewValue",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 41,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40,
+                  "name": "y",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48,
+                  "src": "457:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 39,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "457:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "456:8:0"
+            },
+            "returnParameters": {
+              "id": 42,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "472:0:0"
+            },
+            "scope": 100,
+            "src": "436:59:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 55,
+              "nodeType": "Block",
+              "src": "549:26:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 53,
+                    "name": "newValue",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 6,
+                    "src": "562:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 52,
+                  "id": 54,
+                  "nodeType": "Return",
+                  "src": "555:15:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 56,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNewValue",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 49,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "519:2:0"
+            },
+            "returnParameters": {
+              "id": 52,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 56,
+                  "src": "543:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 50,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "543:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "542:6:0"
+            },
+            "scope": 100,
+            "src": "499:76:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 64,
+              "nodeType": "Block",
+              "src": "636:28:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 62,
+                    "name": "cardsArray",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 20,
+                    "src": "649:10:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_card_$13_storage_$dyn_storage",
+                      "typeString": "struct SimpleStorage.card storage ref[] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 61,
+                  "id": 63,
+                  "nodeType": "Return",
+                  "src": "642:17:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 65,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCards",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 57,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "596:2:0"
+            },
+            "returnParameters": {
+              "id": 61,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 65,
+                  "src": "621:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_card_$13_memory_$dyn_memory_ptr",
+                    "typeString": "struct SimpleStorage.card[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 58,
+                      "name": "card",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 13,
+                      "src": "621:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_card_$13_storage_ptr",
+                        "typeString": "struct SimpleStorage.card"
+                      }
+                    },
+                    "id": 59,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "621:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_card_$13_storage_$dyn_storage_ptr",
+                      "typeString": "struct SimpleStorage.card[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "620:15:0"
+            },
+            "scope": 100,
+            "src": "579:85:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 98,
+              "nodeType": "Block",
+              "src": "762:168:0",
+              "statements": [
+                {
+                  "assignments": [
+                    77
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 77,
+                      "name": "newCard",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 98,
+                      "src": "773:19:0",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_card_$13_memory_ptr",
+                        "typeString": "struct SimpleStorage.card"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 76,
+                        "name": "card",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 13,
+                        "src": "773:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_card_$13_storage_ptr",
+                          "typeString": "struct SimpleStorage.card"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 83,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 79,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 67,
+                        "src": "809:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 80,
+                        "name": "strength",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 69,
+                        "src": "821:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 81,
+                        "name": "defence",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 71,
+                        "src": "839:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 78,
+                      "name": "card",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "795:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_card_$13_storage_ptr_$",
+                        "typeString": "type(struct SimpleStorage.card storage pointer)"
+                      }
+                    },
+                    "id": 82,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "795:57:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_card_$13_memory",
+                      "typeString": "struct SimpleStorage.card memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "773:79:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 88,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 84,
+                        "name": "cards",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17,
+                        "src": "861:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_card_$13_storage_$",
+                          "typeString": "mapping(uint256 => struct SimpleStorage.card storage ref)"
+                        }
+                      },
+                      "id": 86,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 85,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 67,
+                        "src": "867:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "861:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_card_$13_storage",
+                        "typeString": "struct SimpleStorage.card storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 87,
+                      "name": "newCard",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 77,
+                      "src": "873:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_card_$13_memory_ptr",
+                        "typeString": "struct SimpleStorage.card memory"
+                      }
+                    },
+                    "src": "861:19:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_card_$13_storage",
+                      "typeString": "struct SimpleStorage.card storage ref"
+                    }
+                  },
+                  "id": 89,
+                  "nodeType": "ExpressionStatement",
+                  "src": "861:19:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 93,
+                        "name": "newCard",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 77,
+                        "src": "902:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_card_$13_memory_ptr",
+                          "typeString": "struct SimpleStorage.card memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_card_$13_memory_ptr",
+                          "typeString": "struct SimpleStorage.card memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 90,
+                        "name": "cardsArray",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20,
+                        "src": "886:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_card_$13_storage_$dyn_storage",
+                          "typeString": "struct SimpleStorage.card storage ref[] storage ref"
+                        }
+                      },
+                      "id": 92,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "886:15:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_card_$13_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct SimpleStorage.card storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 94,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "886:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 95,
+                  "nodeType": "ExpressionStatement",
+                  "src": "886:24:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 96,
+                    "name": "id",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 67,
+                    "src": "923:2:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 75,
+                  "id": 97,
+                  "nodeType": "Return",
+                  "src": "916:9:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 99,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createCard",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 72,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 67,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "689:10:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 66,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "689:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 69,
+                  "name": "strength",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "701:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 68,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "701:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 71,
+                  "name": "defence",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "719:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 70,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "719:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "688:47:0"
+            },
+            "returnParameters": {
+              "id": 75,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 74,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 99,
+                  "src": "753:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 73,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "753:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "752:9:0"
+            },
+            "scope": 100,
+            "src": "669:261:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 101,
+        "src": "91:841:0"
+      }
+    ],
+    "src": "32:901:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/lixua/OneDrive/NUS/IS4302/truffle-box/contracts/SimpleStorage.sol",
+      "exportedSymbols": {
+        "SimpleStorage": [
+          100
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "attributes": {
+          "literals": [
+            "experimental",
+            "ABIEncoderV2"
+          ]
+        },
+        "id": 2,
+        "name": "PragmaDirective",
+        "src": "56:33:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            100
+          ],
+          "name": "SimpleStorage",
+          "scope": 101
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "storedData",
+              "scope": 100,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3,
+                "name": "ElementaryTypeName",
+                "src": "118:4:0"
+              }
+            ],
+            "id": 4,
+            "name": "VariableDeclaration",
+            "src": "118:15:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "newValue",
+              "scope": 100,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 5,
+                "name": "ElementaryTypeName",
+                "src": "137:4:0"
+              }
+            ],
+            "id": 6,
+            "name": "VariableDeclaration",
+            "src": "137:13:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "SimpleStorage.card",
+              "name": "card",
+              "scope": 100,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "id",
+                  "scope": 13,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 7,
+                    "name": "ElementaryTypeName",
+                    "src": "178:7:0"
+                  }
+                ],
+                "id": 8,
+                "name": "VariableDeclaration",
+                "src": "178:10:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "strength",
+                  "scope": 13,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 9,
+                    "name": "ElementaryTypeName",
+                    "src": "196:7:0"
+                  }
+                ],
+                "id": 10,
+                "name": "VariableDeclaration",
+                "src": "196:16:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "defence",
+                  "scope": 13,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 11,
+                    "name": "ElementaryTypeName",
+                    "src": "220:7:0"
+                  }
+                ],
+                "id": 12,
+                "name": "VariableDeclaration",
+                "src": "220:15:0"
+              }
+            ],
+            "id": 13,
+            "name": "StructDefinition",
+            "src": "158:82:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "cards",
+              "scope": 100,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct SimpleStorage.card)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct SimpleStorage.card)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 14,
+                    "name": "ElementaryTypeName",
+                    "src": "251:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "card",
+                      "referencedDeclaration": 13,
+                      "type": "struct SimpleStorage.card"
+                    },
+                    "id": 15,
+                    "name": "UserDefinedTypeName",
+                    "src": "262:4:0"
+                  }
+                ],
+                "id": 16,
+                "name": "Mapping",
+                "src": "243:24:0"
+              }
+            ],
+            "id": 17,
+            "name": "VariableDeclaration",
+            "src": "243:37:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "cardsArray",
+              "scope": 100,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct SimpleStorage.card[]",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct SimpleStorage.card[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "card",
+                      "referencedDeclaration": 13,
+                      "type": "struct SimpleStorage.card"
+                    },
+                    "id": 18,
+                    "name": "UserDefinedTypeName",
+                    "src": "284:4:0"
+                  }
+                ],
+                "id": 19,
+                "name": "ArrayTypeName",
+                "src": "284:6:0"
+              }
+            ],
+            "id": 20,
+            "name": "VariableDeclaration",
+            "src": "284:17:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "set",
+              "scope": 100,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "x",
+                      "scope": 30,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 21,
+                        "name": "ElementaryTypeName",
+                        "src": "318:4:0"
+                      }
+                    ],
+                    "id": 22,
+                    "name": "VariableDeclaration",
+                    "src": "318:6:0"
+                  }
+                ],
+                "id": 23,
+                "name": "ParameterList",
+                "src": "317:8:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 24,
+                "name": "ParameterList",
+                "src": "333:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4,
+                              "type": "uint256",
+                              "value": "storedData"
+                            },
+                            "id": 25,
+                            "name": "Identifier",
+                            "src": "339:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 22,
+                              "type": "uint256",
+                              "value": "x"
+                            },
+                            "id": 26,
+                            "name": "Identifier",
+                            "src": "352:1:0"
+                          }
+                        ],
+                        "id": 27,
+                        "name": "Assignment",
+                        "src": "339:14:0"
+                      }
+                    ],
+                    "id": 28,
+                    "name": "ExpressionStatement",
+                    "src": "339:14:0"
+                  }
+                ],
+                "id": 29,
+                "name": "Block",
+                "src": "333:25:0"
+              }
+            ],
+            "id": 30,
+            "name": "FunctionDefinition",
+            "src": "305:53:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "get",
+              "scope": 100,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 31,
+                "name": "ParameterList",
+                "src": "374:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 38,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 32,
+                        "name": "ElementaryTypeName",
+                        "src": "398:4:0"
+                      }
+                    ],
+                    "id": 33,
+                    "name": "VariableDeclaration",
+                    "src": "398:4:0"
+                  }
+                ],
+                "id": 34,
+                "name": "ParameterList",
+                "src": "397:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 34
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 4,
+                          "type": "uint256",
+                          "value": "storedData"
+                        },
+                        "id": 35,
+                        "name": "Identifier",
+                        "src": "417:10:0"
+                      }
+                    ],
+                    "id": 36,
+                    "name": "Return",
+                    "src": "410:17:0"
+                  }
+                ],
+                "id": 37,
+                "name": "Block",
+                "src": "404:28:0"
+              }
+            ],
+            "id": 38,
+            "name": "FunctionDefinition",
+            "src": "362:70:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setNewValue",
+              "scope": 100,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "y",
+                      "scope": 48,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 39,
+                        "name": "ElementaryTypeName",
+                        "src": "457:4:0"
+                      }
+                    ],
+                    "id": 40,
+                    "name": "VariableDeclaration",
+                    "src": "457:6:0"
+                  }
+                ],
+                "id": 41,
+                "name": "ParameterList",
+                "src": "456:8:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 42,
+                "name": "ParameterList",
+                "src": "472:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 6,
+                              "type": "uint256",
+                              "value": "newValue"
+                            },
+                            "id": 43,
+                            "name": "Identifier",
+                            "src": "478:8:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 40,
+                              "type": "uint256",
+                              "value": "y"
+                            },
+                            "id": 44,
+                            "name": "Identifier",
+                            "src": "489:1:0"
+                          }
+                        ],
+                        "id": 45,
+                        "name": "Assignment",
+                        "src": "478:12:0"
+                      }
+                    ],
+                    "id": 46,
+                    "name": "ExpressionStatement",
+                    "src": "478:12:0"
+                  }
+                ],
+                "id": 47,
+                "name": "Block",
+                "src": "472:23:0"
+              }
+            ],
+            "id": 48,
+            "name": "FunctionDefinition",
+            "src": "436:59:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getNewValue",
+              "scope": 100,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 49,
+                "name": "ParameterList",
+                "src": "519:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 56,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 50,
+                        "name": "ElementaryTypeName",
+                        "src": "543:4:0"
+                      }
+                    ],
+                    "id": 51,
+                    "name": "VariableDeclaration",
+                    "src": "543:4:0"
+                  }
+                ],
+                "id": 52,
+                "name": "ParameterList",
+                "src": "542:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 52
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 6,
+                          "type": "uint256",
+                          "value": "newValue"
+                        },
+                        "id": 53,
+                        "name": "Identifier",
+                        "src": "562:8:0"
+                      }
+                    ],
+                    "id": 54,
+                    "name": "Return",
+                    "src": "555:15:0"
+                  }
+                ],
+                "id": 55,
+                "name": "Block",
+                "src": "549:26:0"
+              }
+            ],
+            "id": 56,
+            "name": "FunctionDefinition",
+            "src": "499:76:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getCards",
+              "scope": 100,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 57,
+                "name": "ParameterList",
+                "src": "596:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 65,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct SimpleStorage.card[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "struct SimpleStorage.card[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "card",
+                              "referencedDeclaration": 13,
+                              "type": "struct SimpleStorage.card"
+                            },
+                            "id": 58,
+                            "name": "UserDefinedTypeName",
+                            "src": "621:4:0"
+                          }
+                        ],
+                        "id": 59,
+                        "name": "ArrayTypeName",
+                        "src": "621:6:0"
+                      }
+                    ],
+                    "id": 60,
+                    "name": "VariableDeclaration",
+                    "src": "621:13:0"
+                  }
+                ],
+                "id": 61,
+                "name": "ParameterList",
+                "src": "620:15:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 61
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 20,
+                          "type": "struct SimpleStorage.card storage ref[] storage ref",
+                          "value": "cardsArray"
+                        },
+                        "id": 62,
+                        "name": "Identifier",
+                        "src": "649:10:0"
+                      }
+                    ],
+                    "id": 63,
+                    "name": "Return",
+                    "src": "642:17:0"
+                  }
+                ],
+                "id": 64,
+                "name": "Block",
+                "src": "636:28:0"
+              }
+            ],
+            "id": 65,
+            "name": "FunctionDefinition",
+            "src": "579:85:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "createCard",
+              "scope": 100,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "id",
+                      "scope": 99,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 66,
+                        "name": "ElementaryTypeName",
+                        "src": "689:7:0"
+                      }
+                    ],
+                    "id": 67,
+                    "name": "VariableDeclaration",
+                    "src": "689:10:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "strength",
+                      "scope": 99,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 68,
+                        "name": "ElementaryTypeName",
+                        "src": "701:7:0"
+                      }
+                    ],
+                    "id": 69,
+                    "name": "VariableDeclaration",
+                    "src": "701:16:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "defence",
+                      "scope": 99,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 70,
+                        "name": "ElementaryTypeName",
+                        "src": "719:7:0"
+                      }
+                    ],
+                    "id": 71,
+                    "name": "VariableDeclaration",
+                    "src": "719:15:0"
+                  }
+                ],
+                "id": 72,
+                "name": "ParameterList",
+                "src": "688:47:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 99,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 73,
+                        "name": "ElementaryTypeName",
+                        "src": "753:7:0"
+                      }
+                    ],
+                    "id": 74,
+                    "name": "VariableDeclaration",
+                    "src": "753:7:0"
+                  }
+                ],
+                "id": 75,
+                "name": "ParameterList",
+                "src": "752:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        77
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "newCard",
+                          "scope": 98,
+                          "stateVariable": false,
+                          "storageLocation": "memory",
+                          "type": "struct SimpleStorage.card",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "card",
+                              "referencedDeclaration": 13,
+                              "type": "struct SimpleStorage.card"
+                            },
+                            "id": 76,
+                            "name": "UserDefinedTypeName",
+                            "src": "773:4:0"
+                          }
+                        ],
+                        "id": 77,
+                        "name": "VariableDeclaration",
+                        "src": "773:19:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": true,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "struct SimpleStorage.card memory",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 13,
+                              "type": "type(struct SimpleStorage.card storage pointer)",
+                              "value": "card"
+                            },
+                            "id": 78,
+                            "name": "Identifier",
+                            "src": "795:4:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 67,
+                              "type": "uint256",
+                              "value": "id"
+                            },
+                            "id": 79,
+                            "name": "Identifier",
+                            "src": "809:2:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 69,
+                              "type": "uint256",
+                              "value": "strength"
+                            },
+                            "id": 80,
+                            "name": "Identifier",
+                            "src": "821:8:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 71,
+                              "type": "uint256",
+                              "value": "defence"
+                            },
+                            "id": 81,
+                            "name": "Identifier",
+                            "src": "839:7:0"
+                          }
+                        ],
+                        "id": 82,
+                        "name": "FunctionCall",
+                        "src": "795:57:0"
+                      }
+                    ],
+                    "id": 83,
+                    "name": "VariableDeclarationStatement",
+                    "src": "773:79:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct SimpleStorage.card storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct SimpleStorage.card storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 17,
+                                  "type": "mapping(uint256 => struct SimpleStorage.card storage ref)",
+                                  "value": "cards"
+                                },
+                                "id": 84,
+                                "name": "Identifier",
+                                "src": "861:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 67,
+                                  "type": "uint256",
+                                  "value": "id"
+                                },
+                                "id": 85,
+                                "name": "Identifier",
+                                "src": "867:2:0"
+                              }
+                            ],
+                            "id": 86,
+                            "name": "IndexAccess",
+                            "src": "861:9:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 77,
+                              "type": "struct SimpleStorage.card memory",
+                              "value": "newCard"
+                            },
+                            "id": 87,
+                            "name": "Identifier",
+                            "src": "873:7:0"
+                          }
+                        ],
+                        "id": 88,
+                        "name": "Assignment",
+                        "src": "861:19:0"
+                      }
+                    ],
+                    "id": 89,
+                    "name": "ExpressionStatement",
+                    "src": "861:19:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_card_$13_memory_ptr",
+                                  "typeString": "struct SimpleStorage.card memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct SimpleStorage.card storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 20,
+                                  "type": "struct SimpleStorage.card storage ref[] storage ref",
+                                  "value": "cardsArray"
+                                },
+                                "id": 90,
+                                "name": "Identifier",
+                                "src": "886:10:0"
+                              }
+                            ],
+                            "id": 92,
+                            "name": "MemberAccess",
+                            "src": "886:15:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 77,
+                              "type": "struct SimpleStorage.card memory",
+                              "value": "newCard"
+                            },
+                            "id": 93,
+                            "name": "Identifier",
+                            "src": "902:7:0"
+                          }
+                        ],
+                        "id": 94,
+                        "name": "FunctionCall",
+                        "src": "886:24:0"
+                      }
+                    ],
+                    "id": 95,
+                    "name": "ExpressionStatement",
+                    "src": "886:24:0"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 75
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 67,
+                          "type": "uint256",
+                          "value": "id"
+                        },
+                        "id": 96,
+                        "name": "Identifier",
+                        "src": "923:2:0"
+                      }
+                    ],
+                    "id": 97,
+                    "name": "Return",
+                    "src": "916:9:0"
+                  }
+                ],
+                "id": 98,
+                "name": "Block",
+                "src": "762:168:0"
+              }
+            ],
+            "id": 99,
+            "name": "FunctionDefinition",
+            "src": "669:261:0"
+          }
+        ],
+        "id": 100,
+        "name": "ContractDefinition",
+        "src": "91:841:0"
+      }
+    ],
+    "id": 101,
+    "name": "SourceUnit",
+    "src": "32:901:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xeA38F94995CFd1a44fFaA9b45EA6C2A8DC081226",
+      "transactionHash": "0x16566e545090dd22e344b8c961c5e446632cd444d7b23ee97b9024a871e231ea"
+    },
+    "1616074342263": {
+      "events": {},
+      "links": {},
+      "address": "0xc4F06E8F4Df20A1b9AeE858A980C9b05129c0F91",
+      "transactionHash": "0xfb9914f03710ee39c926b5a9af6aa1ef0d56486f98e418714c15d94a425072f4"
+    },
+    "1616080051449": {
+      "events": {},
+      "links": {},
+      "address": "0x7798674694D3455ee2a0b261710895122509C30B",
+      "transactionHash": "0x7098bd9610c828bd0941a5e44a9a074dcbd7acd4b4150c340db885dddd671794"
+    },
+    "1616081004183": {
+      "events": {},
+      "links": {},
+      "address": "0x1c356836EF16a5660e78Fd9DeA83E4Dac148AD09",
+      "transactionHash": "0xb0f6b891c43bc75984b9ff214715c46e212432299b05017b9f8894d7df6063ab"
+    }
+  },
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-03-18T15:59:05.831Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
